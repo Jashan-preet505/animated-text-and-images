@@ -1,0 +1,54 @@
+@font-face {
+    font-family: canopee;
+    src: url(canopee.ttf);
+}
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+    background-color: rgb(255, 75, 144);
+}
+div{
+    height:250px;
+    width:300px;
+    border:5px solid black;
+    background-image: url(../images/4.jpg);
+    object-fit: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 110px auto;
+
+    /* -webkit-animation:stp 20s infinite;
+    -o-animation:stp 20s infinite; */
+    /* animation:stp 20s infinite;
+    animation:stp 20s infinite; */
+}
+
+h1{
+    font-size: 130px;
+    font-family: canopee;
+    text-align: center;
+    color:rgb(20, 20, 20);
+    animation:txt 10s infinite;
+}
+@keyframes stp {
+     0%{background-image: url(../images/4.jpg); object-fit: cover;}
+     25%{background-image: url(../images/OIP.jpeg); object-fit: cover;}
+     50%{background-image: url(../images/5_.jpg); object-fit: cover; }
+     75%{background-image: url(../images/3_.jpg); object-fit: cover;}
+     100%{background-image: url(../images/2_.jpg); object-fit: cover;}
+}
+
+div:hover{
+    animation:stp 15s infinite;
+}
+
+@keyframes txt {
+    30%{color:rgb(13, 83, 36);font-size: 100px;transform:translate(20%,0)}
+    60%{color:rgb(223, 50, 50);font-size: 100px;transform: translate(-20%,0);}
+    100%{color:rgb(54, 27, 211);font-size:120px;}
+}
